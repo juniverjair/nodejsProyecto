@@ -1,26 +1,21 @@
-# NodeJS + Socket.io
+# NodeJS + Socket.io + Google Translate API
 
-Tutorial de Socket.io con NodeJs y Express.
-Para constatar la ejecución se abren diferentes ventanas del navegador.
+Se tiene un servicio que ayuda con la traduccion de texto utilizando la API de Google Translate.
 
-##Para instalar dependencias
+Existe una lista de idiomas soportados la cual se la consume de Google Translate y se le muestra al usuario utilizando la secuencia de texto:
+
+```sh
+-help
+```
+ Para traducir se utiliza la siguiente secuencia de texto, el idioma origen es detectado automaticamente y solo debemos preocuparnos por elegir el idioma destino.
+```sh
+texto a traducir -codigo_idioma_destino
+```
+
+## Instalar dependencias
 
 ```bash
 npm install --save
-```
-
-## Ejecutar con Express
-
-En MacOS o Linux, ejecute la aplicación con este mandato:
-
-```bash
-DEBUG=myapp:* npm start
-```
-
-En Windows, utilice este mandato:
-
-```bash
-set DEBUG=myapp:* & npm start
 ```
 
 ## Ejecutar con Node.js
@@ -34,3 +29,13 @@ node app.js
 ```bash
 http://localhost:3000/
 ```
+
+## Imagenes de ejecución
+
+Selección de ayuda:
+
+![alt text](./img/help.PNG)
+
+Funcionalidad de traducción:
+
+![alt text](./img/trans.PNG)
